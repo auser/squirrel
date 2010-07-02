@@ -1,0 +1,17 @@
+squirrel
+---
+
+A lightweight queuing library in erlang. 
+
+    make
+    erl -pa ./ebin/ -eval 'application:start(squirrel)'
+
+To demonstrate functionality:
+
+    squirrel:subscribe(ari, fun(Msg) -> io:format("Msg: ~p~n", [Msg]) end).
+    squirrel:publish(ari, {hello, dog}).
+
+Features
+----------
+
+Limited. This is only a lightweight queue with very little functionality. If you need something more, I highly suggest RabbitMQ.
