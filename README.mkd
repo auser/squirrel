@@ -1,4 +1,4 @@
-squirrel
+Squirrel
 ---
 
 A lightweight queuing library in erlang. 
